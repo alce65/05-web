@@ -1,3 +1,5 @@
+import { renderCommon } from './helpers.js';
+
 export function index() {
     console.log('Cargado index');
 
@@ -14,6 +16,9 @@ export function index() {
 
     console.log(document);
     console.dir(document);
+
+    renderCommon('Home');
+
     const heading = document.querySelector('h1');
     let paragraphs = document.querySelectorAll('p');
     console.dir(heading);
